@@ -93,8 +93,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libshim_camera \
     android.hardware.camera.provider@2.4-impl \
-    android.hardware.camera.provider@2.4-service \
-	SnapdragonCamera
+    android.hardware.camera.provider@2.4-service 
 
 # Display
 PRODUCT_PACKAGES += \
