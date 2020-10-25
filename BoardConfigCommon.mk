@@ -39,7 +39,6 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-BOARD_KERNEL_SEPARATED_DTBO := true
 
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
@@ -48,7 +47,6 @@ TARGET_KERNEL_CONFIG := sdm670-perf_defconfig
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
-# BUILD_WITHOUT_VENDOR := true
 TARGET_BOARD_PLATFORM := sdm710
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno616
 
@@ -64,7 +62,7 @@ TARGET_LD_SHIM_LIBS += /vendor/lib/libmms_hal_vstab.so|/vendor/lib/libshim_camer
 TARGET_LD_SHIM_LIBS += /vendor/lib/libmms_warper_vstab.so|/vendor/lib/libshim_camera.so
 
 # Charger
-WITH_LINEAGE_CHARGER := false
+WITH_MOKEE_CHARGER := false
 
 # Display
 TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
@@ -112,7 +110,7 @@ BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
 TARGET_COPY_OUT_VENDOR := vendor
 
 # Power
-TARGET_TAP_TO_WAKE_NODE := /dev/vendor.lineage.touch@1.0/dt2w
+TARGET_TAP_TO_WAKE_NODE := /dev/vendor.mokee.touch@1.0/dt2w
 TARGET_USES_INTERACTION_BOOST := true
 
 # Properties
