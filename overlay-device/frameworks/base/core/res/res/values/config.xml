@@ -586,4 +586,8 @@
     <dimen name="status_bar_height_landscape">24dp</dimen>-->
     <dimen name="status_bar_height_portrait">29.089996dip</dimen>
     <dimen name="status_bar_height_landscape">29.089996dip</dimen>
+
+    <!-- Smart charging -->
+    <bool name="config_smartChargingAvailable">true</bool>
+
 </resources>
