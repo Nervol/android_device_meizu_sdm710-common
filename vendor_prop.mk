@@ -151,11 +151,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.thermalconfig.powersave=/vendor/etc/thermal.low.conf \
     persist.thermalengine.platform=qualcomm \
     persist.thermalmanager.enable=true \
-
-#Camera
-ro.vendor.camera.no_vts=1 \
-presist.camera.expose.aux=1 \
-
-# Dolby
-PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.audio.dolby.ds2.enabled=true
