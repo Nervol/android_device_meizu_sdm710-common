@@ -13,6 +13,8 @@ TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
 # Build
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_PREBUILT_ELF_FILES := true
 
 # Architecture
 TARGET_ARCH := arm64
@@ -61,9 +63,6 @@ USE_CAMERA_STUB := true
 BOARD_QTI_CAMERA_32BIT_ONLY := true
 TARGET_LD_SHIM_LIBS += /vendor/lib/libmms_hal_vstab.so|/vendor/lib/libshim_camera.so
 TARGET_LD_SHIM_LIBS += /vendor/lib/libmms_warper_vstab.so|/vendor/lib/libshim_camera.so
-
-# Charger
-WITH_LINEAGE_CHARGER := false
 
 # Display
 TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
@@ -157,9 +156,6 @@ BOARD_USES_QC_TIME_SERVICES := true
 
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
-
-# VNDK
-BOARD_VNDK_VERSION := current
 
 # Wi-Fi
 BOARD_HAS_QCOM_WLAN := true
