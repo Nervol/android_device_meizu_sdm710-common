@@ -7,6 +7,9 @@
 LOCAL_PATH := $(call my-dir)
 
 ifneq ($(filter m1852 m1872,$(TARGET_DEVICE)),)
+
+$(call add-radio-file,prebuilt/vbmeta.img)
+
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
 include $(CLEAR_VARS)
