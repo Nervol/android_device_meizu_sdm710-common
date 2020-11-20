@@ -192,7 +192,3 @@ persist.radio.calls.on.ims=1
 
 #Property to auto detect region for system
 ro.regionalization.support=true
-
-# Apex
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.apex.updatable=true
