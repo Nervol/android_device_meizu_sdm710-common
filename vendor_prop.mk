@@ -154,3 +154,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.thermalconfig.powersave=/vendor/etc/thermal.low.conf \
     persist.thermalengine.platform=qualcomm \
     persist.thermalmanager.enable=true \
+
+#timeout crash duration set to 20sec before system is ready.
+#timeout duration updates to default timeout of 5sec once the system is ready.
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.audio.hal.boot.timeout.ms=20000
+
