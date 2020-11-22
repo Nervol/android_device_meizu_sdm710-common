@@ -156,4 +156,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.thermalconfig.powersave=/vendor/etc/thermal.low.conf \
     persist.thermalengine.platform=qualcomm \
     persist.thermalmanager.enable=true \
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 06171b9... m1852: init: m1852: Add property for timecheck timeout duration.
