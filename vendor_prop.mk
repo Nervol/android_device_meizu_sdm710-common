@@ -18,7 +18,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac \
     persist.vendor.bt.splita2dp.44_1_war=true \
     ro.vendor.audio.sdk.ssr=false \
-    vendor.audio_hal.period_size=240 \
     vendor.audio.apptype.multirec.enabled=false \
     vendor.audio.dolby.ds2.enabled=false \
     vendor.audio.dolby.ds2.hardbypass=false \
@@ -33,11 +32,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.offload.pstimeout.secs=3 \
     vendor.audio.parser.ip.buffer.size=262144 \
     vendor.audio.record.multiple.enabled=false \
-    vendor.audio.safx.pbe.enabled=false \
+    vendor.audio.safx.pbe.enabled=true \
     vendor.audio.tunnel.encode=false \
     vendor.audio.use.sw.alac.decoder=true \
     vendor.audio.use.sw.ape.decoder=true \
-    vendor.audio.hal.boot.timeout.ms=20000
     vendor.fm.a2dp.conc.disabled=true \
     vendor.voice.path.for.pcm.voip=true \
     ro.af.client_heap_size_kbyte=7168 \
@@ -55,9 +53,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapsize=512m \
     dalvik.vm.heapstartsize=8m \
     dalvik.vm.heaptargetutilization=0.75 \
-
-# Charger
-ro.charger.enable_suspend=true
 
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-meizu
@@ -125,8 +120,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
-    persist.dbg.volte_avail_ovr=1 \
-    persist.dbg.vt_avail_ovr=1 \
     persist.ct_volte_support=1 \
     persist.radio.fourgOff=1 \
     persist.radio.multisim.config=dsds \
@@ -156,7 +149,21 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.thermalconfig.powersave=/vendor/etc/thermal.low.conf \
     persist.thermalengine.platform=qualcomm \
     persist.thermalmanager.enable=true \
-<<<<<<< HEAD
 
-=======
->>>>>>> parent of 06171b9... m1852: init: m1852: Add property for timecheck timeout duration.
+# Audio
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.audio.sdk.fluencetype=none \
+    vendor.audio.offload.track.enable=true \
+    vendor.audio_hal.period_size=192 \
+
+# Perf
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.benchmarkconfig.enable=false \
+    ro.product.perf.config=M1852_base \
+    ro.vendor.qti.sys.fw.bg_apps_limit=32 \
+
+# Meizu
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.meizu.build.branch=M1852_QOF8_mp1 \
+    ro.meizu.build.devowner=wentai \
+    ro.meizu.carrier.model=M852Q \
