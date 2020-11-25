@@ -11,6 +11,9 @@ ifndef BOARD_VNDK_VERSION
 # manually.
 
 VNDK_SP_LIBRARIES := \
+    libdexfile_external \
+    libdexfile_support \
+    libziparchive
 
 install_in_hw_dir := \
    android.hidl.memory@1.0-impl
