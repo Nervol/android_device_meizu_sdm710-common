@@ -252,6 +252,10 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-service \
     libsensorndkbridge
 
+# Shims
+PRODUCT_PACKAGES += \
+    libshim_protobuf
+
 # Telephony
 PRODUCT_PACKAGES += \
     telephony-ext

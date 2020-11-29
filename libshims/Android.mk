@@ -33,3 +33,17 @@ LOCAL_MULTILIB := 32
 LOCAL_VENDOR_MODULE := true
 
 include $(BUILD_SHARED_LIBRARY)
+
+
+include $(CLEAR_VARS)
+LOCAL_SRC_FILES := libshim_protobuf.cpp
+LOCAL_C_INCLUDES := \
+    external/protobuf/src
+LOCAL_SHARED_LIBRARIES := \
+    libprotobuf-cpp-full \
+    libprotobuf-cpp-lite
+LOCAL_MODULE := libshim_protobuf
+LOCAL_MODULE_TAGS := optional
+LOCAL_MULTILIB := both
+LOCAL_VENDOR_MODULE := true
+include $(BUILD_SHARED_LIBRARY)

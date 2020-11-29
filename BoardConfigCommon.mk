@@ -84,6 +84,9 @@ TARGET_ENABLE_MEDIADRM_64 := true
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
+# Fingerprint
+TARGET_LD_SHIM_LIBS += /vendor/lib64/hw/cdfinger.fingerprint.default.so|/vendor/lib64/libshim_protobuf.so
+
 # GPS
 USE_DEVICE_SPECIFIC_GPS := true
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := $(TARGET_BOARD_PLATFORM)
