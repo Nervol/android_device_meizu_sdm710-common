@@ -267,6 +267,10 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.meizu_sdm710
 
+# Tethering
+PRODUCT_PACKAGES += \
+    TetheringConfigOverlay
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service \
