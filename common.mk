@@ -127,15 +127,6 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1
 
 # GPS
-PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.0-impl-qti \
-    libcurl \
-    libgnss \
-    libgnsspps \
-    libgps.utils \
-    libloc_core \
-    liblocation_api
-
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/gps/etc,$(TARGET_COPY_OUT_VENDOR)/etc)
 
@@ -218,6 +209,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml
+
+# Qualcomm vndfwk detect
+PRODUCT_PACKAGES += \
+    libqti_vndfwk_detect \
+    libqti_vndfwk_detect.vendor
 
 # Radio
 PRODUCT_PACKAGES += \

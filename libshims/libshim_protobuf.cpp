@@ -89,3 +89,5 @@ extern "C" void _ZN6google8protobuf8internal9ArenaImpl15AllocateAlignedEj() {}
 extern "C" void _ZN6google8protobuf8internal9ArenaImpl10AddCleanupEPvPFvS3_E() {}
 
 extern "C" void _ZN6google8protobuf2io16CodedInputStream12SkipFallbackEii() {}
+
+extern "C" void _ZN6google8protobuf8internal14WireFormatLite10WriteInt64EilPNS0_2io17CodedOutputStreamE() {}
