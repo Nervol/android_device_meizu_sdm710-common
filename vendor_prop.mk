@@ -54,6 +54,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=8m \
     dalvik.vm.heaptargetutilization=0.75 \
 
+# Dex2oat
+dalvik.vm.dex2oat64.enabled=true
+
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-meizu
 
