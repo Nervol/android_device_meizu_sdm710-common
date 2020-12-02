@@ -26,6 +26,14 @@ CLEAN_VENDOR=true
 SRC=$1
 SRC_QC=$2
 
+function blob_fixup() {
+    case "${1}" in
+   vendor/lib/hw/camera.qcom.so)
+        sed -i "s|libssc.so|libSSc.so|g" "${2}"
+        ;;
+    esac
+}
+
 # Initialize the helper
 setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${LINEAGE_ROOT}" true "${CLEAN_VENDOR}"
 
