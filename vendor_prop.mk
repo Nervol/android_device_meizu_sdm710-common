@@ -57,9 +57,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-meizu
 
-# Dex2oat
-dalvik.vm.dex2oat64.enabled=true
-
 # Meizu
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.meizu.autorecorder=true \
