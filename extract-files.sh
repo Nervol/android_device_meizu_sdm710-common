@@ -22,13 +22,32 @@ source "${HELPER}"
 
 # Default to sanitizing the vendor folder before extraction
 CLEAN_VENDOR=true
+SECTION=
+KANG=
 
-SRC=$1
-SRC_QC=$2
+while [ "$1" != "" ]; do
+    case "$1" in
+        -n | --no-cleanup )     CLEAN_VENDOR=false
+                                ;;
+        -k | --kang)            KANG="--kang"
+                                ;;
+        -s | --section )        shift
+                                SECTION="$1"
+                                CLEAN_VENDOR=false
+                                ;;
+        * )                     SRC="$1"
+                                ;;
+    esac
+    shift
+done
+
+if [ -z "${SRC}" ]; then
+    SRC=adb
+fi
 
 function blob_fixup() {
     case "${1}" in
-   vendor/lib/hw/camera.qcom.so)
+    vendor/lib/hw/camera.qcom.so | vendor/lib64/hw/camera.qcom.so)
         sed -i "s|libssc.so|libSSc.so|g" "${2}"
         ;;
     esac
