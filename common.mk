@@ -89,13 +89,13 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    libshim_camera \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
     Snap
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/lib/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSSc.so \
-    $(LOCAL_PATH)/prebuilt/lib64/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSSc.so
+    $(LOCAL_PATH)/prebuilt/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSSc.so
 
 # Display
 PRODUCT_PACKAGES += \
@@ -126,8 +126,6 @@ PRODUCT_PACKAGES += \
     fs_config_files
 
 # Fingerprint
-TARGET_LD_SHIM_LIBS += /vendor/lib64/hw/cdfinger.fingerprint.default.so|/vendor/lib/libshim_protobuf.so
-
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1
 

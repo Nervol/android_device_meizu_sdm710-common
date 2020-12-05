@@ -93,7 +93,3 @@ extern "C" void _ZN6google8protobuf2io16CodedInputStream12SkipFallbackEii() {}
 extern "C" void _ZN6google8protobuf8internal14WireFormatLite10WriteInt64EilPNS0_2io17CodedOutputStreamE() {}
 
 extern "C" void _ZN6google8protobuf8internal9ArenaImpl28AllocateAlignedAndAddCleanupEmPFvPvE() {}
-
-extern "C" void _ZN11suid_lookup12request_suidENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE() {}
-
-extern "C" void _ZN14ssc_connection12send_requestERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE() {}
