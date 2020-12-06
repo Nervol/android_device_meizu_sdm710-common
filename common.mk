@@ -95,7 +95,7 @@ PRODUCT_PACKAGES += \
     Snap
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSSc.so
+    $(LOCAL_PATH)/prebuilt/libSSc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSSc.so
 
 # Display
 PRODUCT_PACKAGES += \
@@ -130,6 +130,15 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1
 
 # GPS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl-qti \
+    libcurl \
+    libgnss \
+    libgnsspps \
+    libgps.utils \
+    libloc_core \
+    liblocation_api
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/gps/etc,$(TARGET_COPY_OUT_VENDOR)/etc)
 
