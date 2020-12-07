@@ -458,6 +458,10 @@ vendor/lib64/libperipheral_client.so
 vendor/lib/hw/power.qcom.so
 vendor/lib64/hw/power.qcom.so
 
+# Protobuf - from LA.UM.9.8.r1-02700-SDM710.0
+vendor/lib/libprotobuf-cpp-full-vendor-3.9.1.so|df4adf12c0dff2fcea799022fb65d7971e40267c
+vendor/lib64/libprotobuf-cpp-full-vendor-3.9.1.so|4d2bd210c601ba69fa7d5f0f2ab491da362ebef1
+
 # QMI
 vendor/bin/irsc_util
 vendor/bin/pd-mapper

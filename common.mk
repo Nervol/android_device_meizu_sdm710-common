@@ -119,7 +119,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
-    android.hardware.drm@1.2-service.clearkey
+    android.hardware.drm@1.3-service.clearkey \
 
 # Filesystem
 PRODUCT_PACKAGES += \
@@ -237,8 +237,7 @@ PRODUCT_PACKAGES += \
     ims-ext-common \
     libjson \
     librmnetctl \
-    libxml2 \
-    libprotobuf-cpp-full
+    libxml2
 
 # RCS
 PRODUCT_PACKAGES += \
@@ -261,10 +260,6 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
     android.hardware.sensors@1.0-service \
     libsensorndkbridge
-
-# Shims
-PRODUCT_PACKAGES += \
-    libshim_protobuf
 
 # Telephony
 PRODUCT_PACKAGES += \
