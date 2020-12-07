@@ -49,7 +49,7 @@
     <bool translatable="false" name="config_wifi_diagnostics_bugreport_enabled">true</bool>
 
     <!-- Do not translate. Default access point SSID used for tethering -->
-    <string name="wifi_tether_configure_ssid_default" translatable="false">Meizu 16th</string>
+    <string name="wifi_tether_configure_ssid_default" translatable="false">Meizu X8</string>
 
     <!-- Wifi driver supports batched scan -->
     <bool translatable="false" name="config_wifi_batched_scan_supported">true</bool>
