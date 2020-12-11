@@ -98,6 +98,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES  += \
     ro.opengles.version=196610 \
 
+# Graphics
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.egl=adreno
+    ro.hardware.vulkan=adreno
+
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.perf.level=3 \
