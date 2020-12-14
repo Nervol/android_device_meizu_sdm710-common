@@ -87,6 +87,9 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.a2dp@1.0-impl \
     libbthost_if
 
+# Enable Scoped Storage related
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 # Camera
 PRODUCT_PACKAGES += \
     libshim_camera \
@@ -223,7 +226,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml
-    $(LOCAL_PATH)/configs/privapp-permission/privapp-permissions-google-extra.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-google-extra.xml
 
 # Qualcomm vndfwk detect
 PRODUCT_PACKAGES += \
