@@ -87,6 +87,9 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.a2dp@1.0-impl \
     libbthost_if
 
+# Enable Scoped Storage related
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 # Camera
 PRODUCT_PACKAGES += \
     libshim_camera \
